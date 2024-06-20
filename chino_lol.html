@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chino Pawned This</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .message {
+            position: relative;
+            font-size: 2em;
+            animation: moveAround 5s linear infinite, changeColor 1s linear infinite;
+        }
+
+        @keyframes moveAround {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(100px, -100px); }
+            50% { transform: translate(-100px, 100px); }
+            75% { transform: translate(100px, 100px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        @keyframes changeColor {
+            0% { color: #ff0000; }
+            25% { color: #00ff00; }
+            50% { color: #0000ff; }
+            75% { color: #ffff00; }
+            100% { color: #ff00ff; }
+        }
+
+        .laughing {
+            animation: changeColor 1s linear infinite;
+        }
+
+        @keyframes laughAnimation {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(20deg); }
+        }
+
+        .laugh {
+            display: inline-block;
+            animation: laughAnimation 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <div>Chino pawned this! you are too late!</div>
+        <pre class="laughing">
+  <div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div>
+ <div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div>
+<div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div> <div class="laugh">😂</div>
+        </pre>
+    </div>
+</body>
+</html>
+
